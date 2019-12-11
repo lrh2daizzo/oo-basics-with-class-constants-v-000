@@ -4,11 +4,14 @@ class Shoe
 
   BRANDS = []
 
-  def initialize(brand)
-    @brand = brand
-    
+  def initialize
   end
 
+  def brand=(brand)
+    @brand = brand
+    BRANDS << brand
+  end
+  
   def cobble
     @condition = "new"
     puts "Your shoe is as good as new!"
