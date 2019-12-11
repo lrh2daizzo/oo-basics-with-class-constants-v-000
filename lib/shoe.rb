@@ -10,10 +10,10 @@ class Shoe
   def brand=(brand)
     @brand = brand
     BRANDS << brand unless BRANDS.include?(brand)
-      
+
     end
   end
-  
+
   def cobble
     @condition = "new"
     puts "Your shoe is as good as new!"
